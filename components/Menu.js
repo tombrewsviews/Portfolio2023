@@ -18,7 +18,7 @@ export default function Menu() {
           <button
             onClick={() => setActiveTab(tab.id)}
             className={`${
-              activeTab === tab.id ? '' : 'hover:text-white/60'
+              activeTab === tab.id ? 'text-black' : 'hover:text-white/60'
             } relative rounded-full px-3 py-1.5 text-sm font-medium text-white outline-sky-400 transition focus-visible:outline-2`}
             style={{
               WebkitTapHighlightColor: 'transparent',
