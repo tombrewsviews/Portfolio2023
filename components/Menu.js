@@ -8,7 +8,6 @@ export default function Menu() {
   const activeTab = router.pathname.substring(1); // remove the leading slash
 
   return (
-    <div className="flex-col w-full max-w-7xl mx-auto">
       <div className="flex space-x-1">
         {tabs.map((tab) => (
           <Link href={`/${tab.id}`} key={tab.id}>
@@ -34,6 +33,5 @@ export default function Menu() {
           </Link>
         ))}
       </div>
-    </div>
   );
 }

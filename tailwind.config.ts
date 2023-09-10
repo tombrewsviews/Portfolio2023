@@ -85,4 +85,12 @@ module.exports = {
     },
   },
   plugins: [require('tailwindcss-animate')],
+  screens: {
+    'sm': '640px',
+    // => @media (min-width: 640px) { ... }
+
+    'xl': '1280px',
+    // => @media (min-width: 1280px) { ... }
+
+  }
 };
