@@ -49,10 +49,18 @@
     width: 100vw;
     height: 100vh;
     @apply bg-background text-foreground;
+    font-family: 'Manrope', sans-serif;
     font-feature-settings:
       'rlig' 1,
       'calt' 1;
   }
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./../public/Manrope[wght].woff2') format('woff2-variations');
+  font-weight: 100 900; 
+  font-display: swap;
 }
 
 #__next {
