@@ -8,7 +8,7 @@ export default function Menu() {
   const activeTab = router.pathname.substring(1); // remove the leading slash
 
   return (
-      <div className="flex space-x-1">
+      <div className="flex space-x-1 py-4">
         {tabs.map((tab) => (
           <Link href={`/${tab.id}`} key={tab.id}>
             <button

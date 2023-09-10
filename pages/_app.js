@@ -1,18 +1,15 @@
 import '../styles/globals.css';
-import { useState } from 'react';
 import Menu from '../components/Menu';
-import tabs from '../tabs';
 
-export default function MyApp({ Component, pageProps }) {
-
-  const [activeTab, setActiveTab] = useState(tabs[0].id);
-
+function MyApp({ Component, pageProps }) {
   return (
-    <div className="inline-flex flex-column items-center min-h-screen px-24 max-sm:px-5 max-w-7xl mx-auto w-full">
-      <Menu />
-      
-      <Component {...pageProps} />
-
+    <div className="flex justify-center min-h-screen bg-black">
+      <div className="w-full max-w-xl mx-auto py-6 sm:px-6 lg:px-8">
+        <Menu />
+        <Component {...pageProps} />
+      </div>
     </div>
   );
 }
+
+export default MyApp
