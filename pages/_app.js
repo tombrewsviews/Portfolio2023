@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
       <div className="w-full max-w-xl mx-auto py-6 sm:px-6 lg:px-8">
         <Menu />
         <Component {...pageProps} />
+        asdjhasd
       </div>
     </div>
   );
